@@ -18,5 +18,10 @@ jobs:
 
       - name: Print secret
         env:
-          SECRET_VAR: ${{ secrets.SECRET_NAME }}
-        run: echo $SECRET_VAR
+          SECRET_NAME: ${{ secrets.SECRET_NAME }}
+        run: echo $SECRET_NAME
+      - name: Print Var
+        env:
+          VAR_NAME: ${{ vars.VAR_NAME }}
+        run: echo $VAR_NAME
+		 
