@@ -24,4 +24,3 @@ jobs:
         env:
           VAR_NAME: ${{ vars.VAR_NAME }}
         run: echo $VAR_NAME
-		 
